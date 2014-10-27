@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Contacto</title>
+	</head>
+	<body>
+		<header>
+			<h1>Hache Cueros</h1>
+			<nav>
+				<ul>
+					<li><a href= ".html">Hache cueros</a> </li>
+					<li><a href= "filosofia.html">Filosofía</a> </li>
+					<li><a href= ".html">Noticias</a> </li>
+					<li><a href= ".html">Nah!</a> </li>
+					<li><a href= "contacto.html">Contacto </a> </li>
+				</ul> 
+			</nav>
+		</header>
+		<h2>Contáctenos</h2>
+		<form action="form" method="get"> 
+			<fieldset>
+				<legend>Datos personales</legend>
+				<label for="user-name">Nombre completo:</label>
+				<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
+				<br> 
+				<label>Email:</label>
+				<input type="email" placeholder="alguien@ejemplo.com" required>
+				<br>
+				<label>País:</label>
+					<select id="country">
+						<option value="argentina" selected>Argentina</option>
+						<option value="brasil">Brasil</option>
+						<option value="bolivia">Bolivia</option>
+						<option value="chile">Chile</option>
+						<option value="Paraguay">Paraguay</option>
+						<option value="Uruguay">Uruguay</option>
+						<option value="otros">otros</option>
+					</select>
+				<br>
+				<label>Provincia</label>
+					<select id="provincia">
+						<option value="Buenos-Aires">Buenos Aires</option>
+						<option value="Catamarca">Catamarca</option>
+						<option value="Chaco">Chaco</option>
+						<option value="Chubut">Chubut</option>
+						<option value="Cordoba">Córdoba</option>
+						<option value="Corrientes">Corrientes</option>
+						<option value="Entre-Rioa">Entre Ríos</option>
+						<option value="Formosa">Formosa</option>
+						<option value="Jujuy">Jujuy</option>
+						<option value="La-Pampa">La Pampa</option>
+						<option value="La-Rioja">La Rioja</option>
+						<option value="Mendoza" selected>Mendoza</option>
+						<option value="Misiones">Misiones</option>
+						<option value="Neuquen">Neuquén</option>
+						<option value="Rio-Negro">Río-Negro</option>
+						<option value="Salta">Salta</option>
+						<option value="San-Juan">San Juan</option>
+						<option value="San-Luis">San Luis</option>
+						<option value="Santa-Cruz">Santa Cruz</option>
+						<option value="Santa-Fe">Santa Fe</option>
+						<option value="Santiago-del-Estero">Santiago del Estero</option>
+						<option value="Tierra-del-Fuego">Tierra del Fuego</option>
+						<option value="Tucuman">Tucumán</option>
+					</select>
+				<br>
+			</fieldset>
+		</form>
+		<form id="post">
+			<label>Asunto:</label>
+			<input type="text">
+			<br>
+			<label>Déjenos su mensaje:</label>
+			<br>
+			<textarea rows="15" cols="50" required></textarea>
+			<br>
+			<input type="submit" value="Enviar">
+		</form>
+		<table> 
+			<div class="budget">
+				<tbody>
+					<caption>Presupuesto</caption>
+					<thead>
+						<th></th>
+						<th id="articulo">Artículo</th>
+						<th id="cantidad">Cántidad</th>
+						<th id="descripcion">Descripción</th>
+						<th id"precio">Precio</th>
+					</thead>
+					<tr>
+						<td>Nah!</td>
+						<td headers="articulo">Cartera</td>
+						<td headers="cantidad"><input type="number" maxlenght="3" min="1" max="900"></td>
+						<td headers="descripcion">Hecho en cuero azul con detalles en beige.</td>
+						<td headers="precio">$850</td>
+						<td>¿Alguna aclaración?
+							<textarea rows="1" cols="20"></textarea></td>
+						<td><button id="add-recibe">
+							+
+						</button></td>
+					</tr>
+				<tbody>
+					<th colspan="6"><input type="submit" value="Enviar"></th>
+				<tbody>	
+			</div>	
+		</table>	
+		<nav id="contact">
+			<ul>
+				<li><a href="https://www.facebook.com/nahleathercrafts?fref=ts"><figure><img src="img/Facebook-logo.png" alt="enlace-hacia-el-sitio-en-facebook"/></figure></a></li>
+				<li>+54 0261 624-0824</li>
+				<li>Tucumán 34 - 5500 Ciudad de Mendoza, Mendoza, Argentina</li>
+				<li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.9254588095496!2d-68.8349758!3d-32.87369159999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08ddf3977119%3A0x4b8d85e66621d23e!2sTucum%C3%A1n+34%2C+Mendoza!5e0!3m2!1ses!2sar!4v1414009991293" width="200" height="150" frameborder="0" style="border:0"></iframe></li>
+			</ul>
+		</nav>
+		<footer>
+			<p><small>© Copyright 2014 - Hache cueros - Nah! - Todos los derechos reservados. Design by Nerina Munarin y Antonela Suarez</small></p>
+		</footer>
+	</body>
+</html>

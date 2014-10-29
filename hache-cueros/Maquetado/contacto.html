@@ -78,32 +78,32 @@
 			<input type="submit" value="Enviar">
 		</form>
 		<table> 
-			<div class="budget">
-				<tbody>
-					<caption>Presupuesto</caption>
-					<thead>
-						<th></th>
-						<th id="articulo">Artículo</th>
-						<th id="cantidad">Cántidad</th>
-						<th id="descripcion">Descripción</th>
-						<th id"precio">Precio</th>
-					</thead>
-					<tr>
-						<td>Nah!</td>
-						<td headers="articulo">Cartera</td>
-						<td headers="cantidad"><input type="number" maxlenght="3" min="1" max="900"></td>
-						<td headers="descripcion">Hecho en cuero azul con detalles en beige.</td>
-						<td headers="precio">$850</td>
-						<td>¿Alguna aclaración?
-							<textarea rows="1" cols="20"></textarea></td>
-						<td><button id="add-recibe">
-							+
-						</button></td>
-					</tr>
-				<tbody>
-					<th colspan="6"><input type="submit" value="Enviar"></th>
-				<tbody>	
-			</div>	
+			<caption>Presupuesto</caption>
+			<thead>
+				<tr>
+					<th id="article" colspan="2">Artículo</th>
+					<th id="amount">Cántidad</th>
+					<th id="description">Descripción</th>
+					<th id="price">Precio</th>
+					<th id="text" colspan="2">¿Alguna aclaración?</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="7"><input type="submit" value="Enviar"></td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Nah!</td>
+					<td>Cartera</td>
+					<td><input type="number" min="1" max="900"></td>
+					<td>Hecho en cuero azul con detalles en beige.</td>
+					<td>$850</td>
+					<td><textarea rows="1" cols="20"></textarea></td>
+					<td><button id="add-recibe">+</button></td>
+				</tr>
+			</tbody>
 		</table>	
 		<nav id="contact">
 			<ul>

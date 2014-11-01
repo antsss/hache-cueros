@@ -11,3 +11,35 @@ body {
 h1, h2, h3, h4 {
 	font-family: "Rosario", cursive;
 	color: #f8f8f8;
+}
+#menu-vertical {
+  margin:0;
+  padding:0;
+}
+
+#menu-vertical li {
+  display:block;
+  border-bottom:1px solid #406480;
+  border-radius: 6px;
+  width:200px;
+  background:#cfdce6;
+}
+
+#menu-vertical li a {
+  display:block;
+  padding:5px 5px 5px 10px;
+  font-size:20px;
+  color:#507ea1;
+  text-decoration:none;
+  line-height:40px;
+}
+
+#menu-vertical li a:hover {
+  color:#333;
+  background:#f0f0f0;
+}
+
+#menu-vertical a.active {
+  color:#333;
+  background:#f0f0f0;
+}

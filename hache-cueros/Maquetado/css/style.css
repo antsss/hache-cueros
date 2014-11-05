@@ -77,3 +77,18 @@ h1, h2, h3, h4 {
 .product-list-wrapper::-webkit-scrollbar-thumb:hover {
 	background-color: #aaa;
 }
+.product_femenino{
+display: block;
+}
+.product_femenino : :-before {
+}
+.borders{
+width: 32%;
+float: left;
+overflow: hidden;
+margin: 0 2% 25px 0;
+position: relative;
+}
+.borders:nth-child(3n) {
+margin-right: 0;
+}

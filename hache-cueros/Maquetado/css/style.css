@@ -12,6 +12,10 @@ h1, h2, h3, h4 {
 	font-family: "Rosario", cursive;
 	color: #FFFFCC;
 }
+.lead{
+	font-family: "Rosario", cursive;
+	color: #FFFFCC;
+}
 #menu-vertical {
   margin:0;
   padding:0;
@@ -95,25 +99,18 @@ margin-right: 0;
 .container {
     position: relative;
     width: 70%;
-    max-width: 600px; /* Límite para el ancho de un contenedor fluid */
-    margin: 1em auto; /* Para centrar el bloque dejamos que el browser calcule 
-                         los márgenes izquierdo y derecho seteándolos como auto */
+    max-width: 600px; 
+    margin: 1em auto;
 }
-
-/* Layout de dos columnas
-=============================*/
-/* Header */
 .container header {
     background: #f44;
     color: #fff;
     padding: 5px 10px 10px;
 }
-/* Columna izquierda */
 .container article {
     width: 80%;
     float: left;
 }
-/* Columna derecha */
 .container aside {
     width: 20%;
     float: left;

@@ -3,14 +3,14 @@
 @import url("normalize.css");
 
 body {
-	background: #000000;
+	background: #330000;
 	font-family: "Rosario" , Helvetica ,Arial sans-serif;
 	width: 70%;
 	margin:  0 auto; /* arriba/abajo derecha/izquierda */
 }
 h1, h2, h3, h4 {
 	font-family: "Rosario", cursive;
-	color: #ffffff;
+	color: #FFFFCC;
 }
 #menu-vertical {
   margin:0;

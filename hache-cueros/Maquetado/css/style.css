@@ -117,3 +117,16 @@ margin-right: 0;
     background: pink;
     margin: 1em 0;
 }
+#home {
+display: block;
+width: 200px;
+height: 44px;
+line-height: 44px;
+background: transparent url(img/logo-hache.png) no-repeat 0 50%;
+text-indent: 45px;
+text-transform: uppercase;
+color: #fff;
+text-decoration: none;
+font-size: 17px;
+text-indent: -900em;
+}

@@ -146,3 +146,18 @@ background-size: auto;
 width: 200px ;
 height: 155px;
 }
+#principal{
+  width: 610px;
+  padding: 10px;
+  margin: 10px;
+  }
+ 
+#principal #flotante{
+  float: left;
+  width: 300px;
+  }
+ 
+#principal p{
+  margin-top: 0;
+  margin-left: 310px;
+  }

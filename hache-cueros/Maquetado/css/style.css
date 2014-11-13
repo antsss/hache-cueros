@@ -6,7 +6,7 @@ body {
 	background: #330000;
 	font-family: "Rosario" , Helvetica ,Arial sans-serif;
 	width: 70%;
-	margin:  0 auto; 
+	margin:  0; 
 }
 h1, h2, h3, h4 {
 	font-family: "Rosario", cursive;
@@ -68,7 +68,7 @@ h1, h2, h3, h4 {
 	width: 12px;
 }
 .product-list-wrapper::-webkit-scrollbar:horizontal {
-	height: 6px;
+	height: 8px;
 }
 .product-list-wrapper::-webkit-scrollbar-track {
 	background-color: #333;
@@ -117,3 +117,47 @@ margin-right: 0;
     background: pink;
     margin: 1em 0;
 }
+#header {
+margin: 0 auto;
+}
+#header-logo-container {
+float: left;
+position: relative;
+margin-top: 2px;
+width: 200px;
+}
+#header .header-logo-container #logo-container {
+display: inline-block;
+vertical-align: middle;
+}
+#header #logo {
+background: no-repeat url(img/logo.hache-3.png) 0 -1184px;
+background-size: auto;
+width: 200px ;
+height: 155px;
+}
+#header .header-logo-container #logo-container {
+display: inline-block;
+vertical-align: middle;
+}
+#header #logo {
+background: no-repeat url(img/nah-2.png) 0 -1184px;
+background-size: auto;
+width: 200px ;
+height: 155px;
+}
+#principal{
+  width: 610px;
+  padding: 10px;
+  margin: 10px;
+  }
+ 
+#principal #flotante{
+  float: left;
+  width: 300px;
+  }
+ 
+#principal p{
+  margin-top: 0;
+  margin-left: 310px;
+  }

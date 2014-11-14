@@ -162,7 +162,13 @@ height: 155px;
   color: #FFFFCC;
   }
 footer {
-  color: #FFFFCC;
+border-top: 1px solid #454545;
+color: #C1C1C1;
+float: left;
+height: 100px;
+padding-bottom: 36px;
+padding-top: 11px;
+width: 100%;
 }
 form {
   color: #FFFFCC;
@@ -172,4 +178,26 @@ table {
 }
 #contact {
   color: #FFFFCC;
+}
+.female {
+  display: block;
+float: left;
+height: 357px;
+margin-right: 107px;
+width: 302px;
+}
+.male {
+  display: block;
+float: left;
+height: 357px;
+width: 303px;
+}
+.intro-nah {
+  display: block;
+margin: auto;
+margin-top: auto;
+margin-right: auto;
+margin-bottom: auto;
+margin-left: auto;
+width: 712px;
 }

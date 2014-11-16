@@ -13,7 +13,7 @@ class Social(models.Model):
 	titulo = models.CharField(max_length=200)
 	texto = models.TextField()
 	#tipo_social = models.CharField(max_length=1)
-	tipo_social = models.CharField(max_length=1, choices=TIPO_PUBILACION, default='N')#choise es el combobox, charfield(recibe caracteres)
+	tipo_social = models.CharField(max_length=1, choices=TIPO_PUBILACION, default='N')
 	fecha_inicio_publicacion = models.DateField(auto_now=False)
 	fecha_fin_publicacion = models.DateField(auto_now=False)
     

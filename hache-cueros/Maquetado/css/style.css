@@ -59,10 +59,10 @@ h1, h2, h3, h4 {
 }
 .product-list-horizontal li {
 	display: inline-block;
-	margin-left: 20px;
+	margin-left: 40px;
 }
 .product-list-horizontal li:first-child {
-	margin-left: 0;
+	margin-left: 200px;
 }
 .product-list-wrapper::-webkit-scrollbar {
 	width: 12px;
@@ -73,10 +73,11 @@ h1, h2, h3, h4 {
 .product-list-wrapper::-webkit-scrollbar-track {
 	background-color: #333;
 	border-left: 0;
+  margin-left: 240px;
 }
 .product-list-wrapper::-webkit-scrollbar-thumb {
 	background-color: #fff;
-	border-radius: 2px;
+	border-radius: 4px;
 }
 .product-list-wrapper::-webkit-scrollbar-thumb:hover {
 	background-color: #aaa;
@@ -163,6 +164,7 @@ height: 155px;
   }
 footer {
 border-top: 1px solid #454545;
+margin-left: 20px;
 color: #C1C1C1;
 float: left;
 height: 100px;
@@ -200,4 +202,34 @@ margin-right: auto;
 margin-bottom: auto;
 margin-left: auto;
 width: 712px;
+}
+.table-send {
+  background: #f5f5f5;
+  background-image: linear-gradient(to bottom, #464646, #636363);
+  font-family: Arial;
+  color: #f5f5f5;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+.table-send:hover {
+    background: #303030;
+}
+.round-button-circle {
+    display:block;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align: center;
+    text-decoration:none;
+    background: #464646;
+    box-shadow: 0 0 3px gray;
+    font-size:15px;
+    font-weight:bold;
+}
+.round-button-circle:hover {
+    background: #303030;
 }

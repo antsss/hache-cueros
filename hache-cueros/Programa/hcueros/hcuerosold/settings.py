@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'qcg9(tduyvhow4y&$a-^pirhk&(m4hu59ot5y=2p(^5all$3^2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
@@ -60,13 +60,9 @@ WSGI_APPLICATION = 'hcueros.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hcuerosdb',
-        'USER': 'root',
-        'PASSWORD': 'root',
-       # 'HOST': '/var/run/mysql',
-      #  'PORT': '3306',
-    }    
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
 
 # Internationalization
@@ -87,3 +83,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+try:
+    from settings_local import *
+except ImportError:
+    pass

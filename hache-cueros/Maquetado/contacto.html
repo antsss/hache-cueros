@@ -22,65 +22,75 @@
 					<li><a href="contacto.html">Contacto</a></li>
 				</ul> 
 		</header>
-		<h2>Contáctenos</h2>
-		<form action="form" method="get"> 
-			<fieldset>
-				<legend>Datos personales</legend>
-				<label for="user-name">Nombre completo:</label>
-				<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
-				<br> 
-				<label>Email:</label>
-				<input type="email" placeholder="alguien@ejemplo.com" required>
-				<br>
-				<label>País:</label>
-					<select id="country">
-						<option value="argentina" selected>Argentina</option>
-						<option value="brasil">Brasil</option>
-						<option value="bolivia">Bolivia</option>
-						<option value="chile">Chile</option>
-						<option value="Paraguay">Paraguay</option>
-						<option value="Uruguay">Uruguay</option>
-						<option value="otros">otros</option>
-					</select>
-				<br>
-				<label>Provincia</label>
-					<select id="provincia">
-						<option value="Buenos-Aires">Buenos Aires</option>
-						<option value="Catamarca">Catamarca</option>
-						<option value="Chaco">Chaco</option>
-						<option value="Chubut">Chubut</option>
-						<option value="Cordoba">Córdoba</option>
-						<option value="Corrientes">Corrientes</option>
-						<option value="Entre-Rioa">Entre Ríos</option>
-						<option value="Formosa">Formosa</option>
-						<option value="Jujuy">Jujuy</option>
-						<option value="La-Pampa">La Pampa</option>
-						<option value="La-Rioja">La Rioja</option>
-						<option value="Mendoza" selected>Mendoza</option>
-						<option value="Misiones">Misiones</option>
-						<option value="Neuquen">Neuquén</option>
-						<option value="Rio-Negro">Río-Negro</option>
-						<option value="Salta">Salta</option>
-						<option value="San-Juan">San Juan</option>
-						<option value="San-Luis">San Luis</option>
-						<option value="Santa-Cruz">Santa Cruz</option>
-						<option value="Santa-Fe">Santa Fe</option>
-						<option value="Santiago-del-Estero">Santiago del Estero</option>
-						<option value="Tierra-del-Fuego">Tierra del Fuego</option>
-						<option value="Tucuman">Tucumán</option>
-					</select>
-				<br>
-			</fieldset>
-		</form>
-		<form id="post">
-			<label>Asunto:</label>
-			<input type="text">
-			<br>
-			<label>Déjenos su mensaje:</label>
-			<br>
-			<textarea rows="15" cols="50" required></textarea>
-			<br>
-			<input type="submit" value="Enviar">
+		<h2>Contáctenos</h2>	
+		<form class="contact-form" action="form" method="get"> 
+			<ul class="information-only">
+				<h3 class="individual-info">Datos personales</h3>
+				<span class="required_notification"><small>* Datos requeridos</small></span>
+				<li><label for="user-name">Nombre completo:</label>
+					<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
+				</li>
+				<li> 
+					<label>Email:</label>
+						<input type="email" placeholder="alguien@ejemplo.com" required><span class="form_hint"><small>ingrese un email valido</small></span>
+				</li>
+				<li>
+					<label>País:</label>
+						<select id="country">
+							<option value="argentina" selected>Argentina</option>
+							<option value="brasil">Brasil</option>
+							<option value="bolivia">Bolivia</option>
+							<option value="chile">Chile</option>
+							<option value="Paraguay">Paraguay</option>
+							<option value="Uruguay">Uruguay</option>
+							<option value="otros">otros</option>
+						</select>
+				</li>
+				<li>
+					<label>Provincia</label>
+						<select id="provincia">
+							<option value="Buenos-Aires">Buenos Aires</option>
+							<option value="Catamarca">Catamarca</option>
+							<option value="Chaco">Chaco</option>
+							<option value="Chubut">Chubut</option>
+							<option value="Cordoba">Córdoba</option>
+							<option value="Corrientes">Corrientes</option>
+							<option value="Entre-Rioa">Entre Ríos</option>
+							<option value="Formosa">Formosa</option>
+							<option value="Jujuy">Jujuy</option>
+							<option value="La-Pampa">La Pampa</option>
+							<option value="La-Rioja">La Rioja</option>
+							<option value="Mendoza" selected>Mendoza</option>
+							<option value="Misiones">Misiones</option>
+							<option value="Neuquen">Neuquén</option>
+							<option value="Rio-Negro">Río-Negro</option>
+							<option value="Salta">Salta</option>
+							<option value="San-Juan">San Juan</option>
+							<option value="San-Luis">San Luis</option>
+							<option value="Santa-Cruz">Santa Cruz</option>
+							<option value="Santa-Fe">Santa Fe</option>
+							<option value="Santiago-del-Estero">Santiago del Estero</option>
+							<option value="Tierra-del-Fuego">Tierra del Fuego</option>
+							<option value="Tucuman">Tucumán</option>
+						</select>
+				</li>
+			</ul>
+			<ul class="single-message">
+				<li>
+					<label>Asunto:</label>
+					<input type="text">
+				</li>
+				<li>
+					<label>Déjenos su mensaje:</label>
+				</li>
+				<li>
+					<textarea rows="15" cols="50" required></textarea>
+				</li>
+				<li>
+					<button class="submit" type="submit">Enviar mensaje</button>
+				</li>
+				</ul>
+			</ul>
 		</form>
 		<aside class="budge">
 		<table> 

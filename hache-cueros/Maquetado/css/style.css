@@ -203,6 +203,7 @@ margin-bottom: auto;
 margin-left: auto;
 width: 712px;
 }
+/* === style button contact ===*/
 .table-send {
   background: #f5f5f5;
   background-image: linear-gradient(to bottom, #464646, #636363);
@@ -233,28 +234,38 @@ width: 712px;
 .round-button-circle:hover {
     background: #303030;
 }
+/* === form === */
 .contact-form*:focus {
   outline: none;
   }
-.contact-form h3, .contact-form label {
-  font-family: georgia, times, "Times New Roman", serif;
-}
 /* === List Style ===*/
 .contact-form ul {
   width: 750px;
   list-style-type: none;
   list-style-position: outside;
   margin: 0px;
-  padding: 0px;
+  padding-top: 10px;
   display: inline;
 }
 .personal-form li{
-padding: 12px;
 border-bottom: 1px solid #eee;
 position: relative;
 }
 .personal-data:first-child, .personal-data:last-child {
   border-bottom: 1px solid #777;
+}
+/* === Button Style of the table === */  
+button.submit {  
+  background: #f5f5f5;
+  background-image: linear-gradient(to bottom, #464646, #636363);
+  font-family: Arial;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none; 
+  }
+button.submit:hover {
+    background: #303030;
 }
 /* === Form Header === */
 .contact-form h3 {
@@ -266,6 +277,7 @@ position: relative;
   margin: 5px 0 0 0;
   display: inline;
   float: right;
+  margin-right: 500px
 }
 /* === Form Element === */
 .contact-form label{
@@ -342,9 +354,6 @@ position: relative;
         color: #28921f;  
     }  
 /* ==== tabla ===*/
-.blue { color: #185875; }
-.yellow { color: #FFF842; }
-
 .container th h1 {
     font-weight: bold;
     font-size: 1em;
@@ -392,7 +401,7 @@ position: relative;
 }
 
 .container td:first-child {
-    color: #330000;
+    color: #660000;
 }
 
 .container tr:hover {
@@ -402,10 +411,9 @@ position: relative;
 .container td:hover {
   background-color: #FFFFCC;
   color: #330000;
-  font-weight: bold;
   
   box-shadow: #FFFFCC -1px 1px, #FFFFCC -2px 2px, #FFFFCC -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
-  transform: translate3d(6px, -6px, 0);
+  transform: translate3d(4px, -4px, 0);
   
   transition-delay: 0s;
     transition-duration: 0.4s;
@@ -418,18 +426,4 @@ position: relative;
 .container th:nth-child(4) {
       display: none;
     }
-}
-/* === Button Style of the table === */  
-button.submit {  
-  background: #f5f5f5;
-  background-image: linear-gradient(to bottom, #464646, #636363);
-  font-family: Arial;
-  color: #FFFFFF;
-  font-size: 15px;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none; 
-  }
-
-button.submit:hover {
-    background: #303030;
 }

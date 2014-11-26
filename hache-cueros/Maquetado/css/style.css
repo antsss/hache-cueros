@@ -203,6 +203,7 @@ margin-bottom: auto;
 margin-left: auto;
 width: 712px;
 }
+/* === style button contact ===*/
 .table-send {
   background: #f5f5f5;
   background-image: linear-gradient(to bottom, #464646, #636363);
@@ -233,28 +234,38 @@ width: 712px;
 .round-button-circle:hover {
     background: #303030;
 }
+/* === form === */
 .contact-form*:focus {
   outline: none;
   }
-.contact-form h3, .contact-form label {
-  font-family: georgia, times, "Times New Roman", serif;
-}
 /* === List Style ===*/
 .contact-form ul {
   width: 750px;
   list-style-type: none;
   list-style-position: outside;
   margin: 0px;
-  padding: 0px;
+  padding-top: 10px;
   display: inline;
 }
 .personal-form li{
-padding: 12px;
 border-bottom: 1px solid #eee;
 position: relative;
 }
 .personal-data:first-child, .personal-data:last-child {
   border-bottom: 1px solid #777;
+}
+/* === Button Style of the table === */  
+button.submit {  
+  background: #f5f5f5;
+  background-image: linear-gradient(to bottom, #464646, #636363);
+  font-family: Arial;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none; 
+  }
+button.submit:hover {
+    background: #303030;
 }
 /* === Form Header === */
 .contact-form h3 {
@@ -266,6 +277,7 @@ position: relative;
   margin: 5px 0 0 0;
   display: inline;
   float: right;
+  margin-right: 500px
 }
 /* === Form Element === */
 .contact-form label{
@@ -341,13 +353,77 @@ position: relative;
     .contact-form input:required:valid + .form_hint::before {  
         color: #28921f;  
     }  
-/* === Button Style === */  
-button.submit {  
-  background: #f5f5f5;
-  background-image: linear-gradient(to bottom, #464646, #636363);
-  font-family: Arial;
-  color: #f5f5f5;
-  font-size: 15px;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none; 
-  }
+/* ==== tabla ===*/
+.container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+  text-align: left;
+  color: #330000;
+}
+
+.container td {
+    font-weight: normal;
+    font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+     -moz-box-shadow: 0 2px 2px -2px #0E1119;
+          box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  display: table;
+  padding: 0 0 6em 0;
+  color: #330000;
+  border-radius: 6px;
+}
+
+.container td, .container th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+    background-color: #FFFFCC;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+    background-color: #ffffcc;
+}
+
+.container th {
+    background-color: #FFFFCC;
+}
+
+.container td:first-child {
+    color: #660000;
+}
+
+.container tr:hover {
+   background-color: #FFFFCC;
+}
+
+.container td:hover {
+  background-color: #FFFFCC;
+  color: #330000;
+  
+  box-shadow: #FFFFCC -1px 1px, #FFFFCC -2px 2px, #FFFFCC -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  transform: translate3d(4px, -4px, 0);
+  
+  transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+  .container td:nth-child(4),
+.container th:nth-child(4) {
+      display: none;
+    }
+}

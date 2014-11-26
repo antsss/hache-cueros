@@ -22,17 +22,15 @@
 					<li><a href="contacto.html">Contacto</a></li>
 				</ul> 
 		</header>
-		<div class="form-of-contact">
-		<h2>Contáctenos</h2>	
+		<div class="form-of-contact">	
 		<form class="contact-form" action="form" method="get"> 
 			<ul class="information-only">
-				<h3 class="individual-info">Datos personales</h3>
 				<span class="required_notification"><small>* Datos requeridos</small></span>
-				<li><label for="user-name">Nombre completo:</label>
+				<li><label for="user-name"><small class="red-small-form">*</small>Nombre completo:</label>
 					<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
 				</li>
 				<li> 
-					<label>Email:</label>
+					<label><small class="red-small-form">*</small>Email:</label>
 						<input type="email" placeholder="alguien@ejemplo.com" required><span class="form_hint"><small>ingrese un email valido</small></span>
 				</li>
 				<li>
@@ -94,7 +92,7 @@
 			</ul>
 		</form>	
 		</div>	
-		<aside class="budge">
+		<aside class="budge-contact">
 		<table class="container"> 
 			<caption>Presupuesto</caption>
 			<thead>

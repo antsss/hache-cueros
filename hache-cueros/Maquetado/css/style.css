@@ -27,6 +27,7 @@ h1, h2, h3, h4 {
   border-radius: 6px;
   width:200px;
   background:#cfdce6;
+  margin-bottom: 20px;
 }
 
 #menu-vertical li a {

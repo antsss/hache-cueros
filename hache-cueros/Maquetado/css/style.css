@@ -273,10 +273,18 @@ button.submit:hover {
     background: #303030;
 }
 /* === Form Header === */
-.contact-form h3 {
+.individual-info h3 {
+  margin-right: auto;
+  margin-top: auto;
+  margin-left: 5px;
+  margin-bottom: 8px;
   margin: 0;
   display: inline;
 }
+.contact-form li {
+  margin-bottom: 10px;
+}
+
 .required_notification{
   color: #d45252;
   margin: 5px 0 0 0;
@@ -332,6 +340,9 @@ button.submit:hover {
     border-color: #b03535;
   }
   /* === form hint ===*/
+  .red-small-form {
+    color: #FF0000;
+  }
   .form_hint {  
     background: #d45252;  
     border-radius: 3px 3px 3px 3px;  

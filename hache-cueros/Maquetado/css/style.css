@@ -152,21 +152,36 @@ background-size: auto;
 width: 200px ;
 height: 155px;
 }
-#principal{
-  width: 610px;
-  padding: 10px;
+#principal-philosophy {
+  width: 900px;
+  padding: 20px;
   margin: 10px;
   }
  
-#principal #flotante{
+#principal-philosophy #flotante-philosophy{
   float: left;
   width: 300px;
   }
-#principal p{
+#principal-philosophy p{
   margin-top: 0;
-  margin-left: 310px;
+  margin-left: 500px;
+  margin -right: 100px;
   color: #FFFFCC;
   }
+#flotante-philosophy{
+  margin-left: 120px;
+  margin-top: 100px;
+}
+.video-philosophy {
+  display: table;
+  margin: 0 auto;
+  border: 1px;
+  }
+.video-philosophy ul {
+  list-style: none;
+  padding: 0;
+}
+/* === solo footer === */
 footer {
 border-top: 1px solid #454545;
 margin-left: 20px;
@@ -177,15 +192,7 @@ padding-bottom: 36px;
 padding-top: 11px;
 width: 100%;
 }
-form {
-  color: #FFFFCC;
-}
-table {
-  color: #FFFFCC;
-}
-#contact {
-  color: #FFFFCC;
-}
+/**/
 .female {
   display: block;
 float: left;
@@ -194,13 +201,13 @@ margin-right: 107px;
 width: 302px;
 }
 .male {
-  display: block;
+display: block;
 float: left;
 height: 357px;
 width: 303px;
 }
 .intro-nah {
-  display: block;
+
 margin: auto;
 margin-top: auto;
 margin-right: auto;
@@ -208,11 +215,36 @@ margin-bottom: auto;
 margin-left: auto;
 width: 712px;
 }
+/* === contact ===*/
+form {
+  color: #FFFFCC;
+  padding: 0;
+  border: 0;
+}
+.way-to-communicate {   
+  margin: 0;
+  padding: 0;
+  width: 200px;   
+  display: block;
+}
+#contact-links {
+  color: #FFFFCC;
+  margin-left: 10px;
+  margin-right: 10px;  
+  margin-top: 100px;
+}
+.contact-num ul {
+  list-style: none;
+  text-align: right;
+}  
+.contact-num li {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 /* === style button contact ===*/
 .table-send {
   background: #f5f5f5;
   background-image: linear-gradient(to bottom, #464646, #636363);
-  font-family: Arial;
   color: #f5f5f5;
   font-size: 15px;
   padding: 5px 10px 5px 10px;

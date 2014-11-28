@@ -475,3 +475,17 @@ button.submit:hover {
       display: none;
     }
 }
+/* === nwes, fotorama ===*/
+.fotorama {
+  position: relative;
+  max-width:80%;
+  margin:0px auto;
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  padding:20px;
+}
+.fotorama a{
+  margin-top: 5px;
+}

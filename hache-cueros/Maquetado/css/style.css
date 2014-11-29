@@ -17,16 +17,17 @@ h1, h2, h3, h4 {
 	color: #FFFFCC;
 }
 #menu-vertical {
+  position: fixed;
   margin:0;
   padding: 0;
 }
 
 #menu-vertical li {
   display:block;
-  border-bottom:1px solid #406480;
+  border-bottom:1px solid #CD936E;
   border-radius: 6px;
   width:200px;
-  background:#cfdce6;
+  background:#CD936E;
   margin-bottom: 20px;
 }
 
@@ -34,24 +35,25 @@ h1, h2, h3, h4 {
   display:block;
   padding:5px 5px 5px 10px;
   font-size:20px;
-  color:#507ea1;
+  color:#FFDFC9;
   text-decoration:none;
   line-height:40px;
 }
 
 #menu-vertical li a:hover {
-  color:#333;
-  background:#f0f0f0;
+  color:#CD936E;
+  background:#FFDFC9;
   display:block;
-  border-bottom:1px solid #406480;
+  border-bottom:1px solid #FFDFC9;
   border-radius: 6px;
   width:200px;
 }
 
 #menu-vertical a.active {
-  color:#333;
-  background:#f0f0f0;
+  color:#CD936E;
+  background:#FFDFC9;
 }
+/* === catalofos hache! === */
 .product-list-wrapper {
 	height: 400px;
 	padding: 20px 0;
@@ -79,6 +81,7 @@ h1, h2, h3, h4 {
 	background-color: #333;
 	border-left: 0;
   margin-left: 240px;
+  margin-right: 0;
 }
 .product-list-wrapper::-webkit-scrollbar-thumb {
 	background-color: #fff;
@@ -87,21 +90,30 @@ h1, h2, h3, h4 {
 .product-list-wrapper::-webkit-scrollbar-thumb:hover {
 	background-color: #aaa;
 }
-.product_femenino{
+.product_femenino {
 display: block;
+margin-bottom: 0;
+margin-left: 250px;
+margin-right: 0;
+margin-top: 10px;
 }
 .product_femenino : :-before {
 }
 .borders{
-width: 32%;
+width: 50%;
+height: 400px;
 float: left;
 overflow: hidden;
-margin: 0 2% 25px 0;
+margin-bottom: 10px;
+margin-left: 0;
+margin-right: 0;
+margin-top: 5px;
 position: relative;
 }
 .borders:nth-child(3n) {
 margin-right: 0;
 }
+
 .container {
     position: relative;
     width: 70%;
@@ -120,7 +132,7 @@ margin-right: 0;
 .container aside {
     width: 20%;
     float: left;
-    background: pink;
+    background: #000000;
     margin: 1em 0;
 }
 #header {
@@ -137,7 +149,7 @@ display: inline-block;
 vertical-align: middle;
 }
 #header #logo {
-background: no-repeat url(img/logo.hache-3.png) 0 -1184px;
+background: no-repeat url(img/hacheblanco5.png.png) 0 -1184px;
 background-size: auto;
 width: 200px ;
 height: 155px;
@@ -147,26 +159,42 @@ display: inline-block;
 vertical-align: middle;
 }
 #header #logo {
-background: no-repeat url(img/nah-2.png) 0 -1184px;
+background: no-repeat url(img/nah.png) 0 -1184px;
 background-size: auto;
-width: 200px ;
-height: 155px;
+width: 300px ;
+height: 255px;
 }
-#principal{
-  width: 610px;
-  padding: 10px;
+/* === filosofia === */
+#principal-philosophy {
+  width: 900px;
+  padding: 20px;
   margin: 10px;
   }
  
-#principal #flotante{
+#principal-philosophy #flotante-philosophy{
   float: left;
   width: 300px;
   }
-#principal p{
+#principal-philosophy p{
   margin-top: 0;
-  margin-left: 310px;
+  margin-left: 500px;
+  margin -right: 100px;
   color: #FFFFCC;
   }
+#flotante-philosophy{
+  margin-left: 120px;
+  margin-top: 100px;
+}
+.video-philosophy {
+  display: table;
+  margin: 0 auto;
+  border: 1px;
+  }
+.video-philosophy ul {
+  list-style: none;
+  padding: 0;
+}
+/* === solo footer === */
 footer {
 border-top: 1px solid #454545;
 margin-left: 20px;
@@ -177,42 +205,69 @@ padding-bottom: 36px;
 padding-top: 11px;
 width: 100%;
 }
-form {
-  color: #FFFFCC;
-}
-table {
-  color: #FFFFCC;
-}
-#contact {
-  color: #FFFFCC;
-}
+/* === nah! === */
 .female {
   display: block;
 float: left;
 height: 357px;
 margin-right: 107px;
 width: 302px;
+color: #FFFFFF;
+text-align: center;
 }
 .male {
-  display: block;
+display: block;
 float: left;
 height: 357px;
 width: 303px;
+color: #FFFFff;
+text-align: center;
 }
 .intro-nah {
-  display: block;
 margin: auto;
-margin-top: auto;
+margin-top: 200px;
 margin-right: auto;
-margin-bottom: auto;
+margin-bottom: 200px;
 margin-left: auto;
 width: 712px;
+}
+/* === contact ===*/
+.contact-all {
+width: 100%;
+margin: 1.2em 0;
+margin-top: 1.2em;
+margin-right: 0px;
+margin-bottom: 1.2em;
+margin-left: 220px;
+padding: 0.5em 1em;
+padding-top: 0.5em;
+padding-right: 1em;
+padding-bottom: 0.5em;
+padding-left: 1em;
+}
+form {
+  color: #FFFFCC;
+  padding: 10 10 10 10px;
+  border: 20px;
+}
+#contact-links {
+  color: #FFFFCC;
+  margin-left: 10px;
+  margin-right: 10px;  
+  margin-top: 100px;
+}
+.contact-num  ul {
+  list-style-type: none;
+  margin-bottom: 10px; 
+}  
+.contact-num li {
+  margin-bottom: 15px;
+  list-style: none;
 }
 /* === style button contact ===*/
 .table-send {
   background: #f5f5f5;
   background-image: linear-gradient(to bottom, #464646, #636363);
-  font-family: Arial;
   color: #f5f5f5;
   font-size: 15px;
   padding: 5px 10px 5px 10px;
@@ -272,11 +327,11 @@ button.submit {
 button.submit:hover {
     background: #303030;
 }
-/* === Form Header === */
-.individual-info h3 {
+/* === más Form === */
+.individual-info  {
   margin-right: auto;
-  margin-top: auto;
-  margin-left: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
   margin-bottom: 8px;
   margin: 0;
   display: inline;
@@ -342,6 +397,9 @@ button.submit:hover {
   /* === form hint ===*/
   .red-small-form {
     color: #FF0000;
+  }
+  select {
+    color: #330000;
   }
   .form_hint {  
     background: #d45252;  
@@ -427,7 +485,6 @@ button.submit:hover {
 .container td:hover {
   background-color: #FFFFCC;
   color: #330000;
-  
   box-shadow: #FFFFCC -1px 1px, #FFFFCC -2px 2px, #FFFFCC -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
   transform: translate3d(4px, -4px, 0);
   
@@ -442,4 +499,18 @@ button.submit:hover {
 .container th:nth-child(4) {
       display: none;
     }
+}
+/* === nwes, fotorama ===*/
+.fotorama {
+  position: relative;
+  max-width:80%;
+  margin:0px auto;
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  padding:20px;
+}
+.fotorama img{
+  margin: 5px;
 }

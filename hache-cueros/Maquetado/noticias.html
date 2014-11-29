@@ -3,16 +3,17 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Eventos|Noticias</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
 	</head>
 		<body>
 			<header>
 			<div id="header" class>
     			<div class="header-logo-container">
         			<a id="logo-container" title="Hache Cueros" class="spf-link">
-    					<img id="logo" src="img/logo-hache-3.png" alt="Hache Cueros">
+    					<img id="logo" src="img/hacheblanco5.png" alt="Hache Cueros">
     			</a>
         	</div>
+        </div>
 			<ul id="menu-vertical">
 					<li><a href="index.html">Hache cueros</a></li>
 					<li><a href="catalogo_hache.html">Catálogo</a></li>
@@ -22,18 +23,16 @@
 					<li><a href="contacto.html">Contacto</a></li>
 			</ul> 
 		</header>
-			<div class="fotorama"
-			     data-transition="crossfade">
-			<div><img src="http://placehold.it/350x150"/></div>
-			<div><img src="http://placehold.it/350x150"/></div>
-			<div><img src="http://placehold.it/350x150"/></div>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<link  href="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.js"></script>
+			<div class="fotorama"  data-nav="thumbs" data-width="600"
+     data-height="250">
+			<img src="http://placehold.it/600x250" alt="noticia-numero-1"/>
+			<img src="http://placehold.it/600x250" alt="noticia-numero-2"/>
+			<img src="http://placehold.it/600x250" alt="noticia-numero-3"/>
 			</div>
-
-
-
-
-
-				<footer> 
+			<footer> 
 				<p><small>© Copyright 2014   |   Hache cueros - Nah!   |   Todos los derechos reservados.</small></p>
 			</footer>
 		</body>

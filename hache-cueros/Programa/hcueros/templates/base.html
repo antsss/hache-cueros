@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>{% block titulo %} {% endblock %}</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div id="header" class>
+    			<div class="header-logo-container">
+        			<a id="logo-container" title="Hache Cueros" class="spf-link">
+    					<img id="logo" src="img/hacheblanco5.png" alt="Hache Cueros">
+    				</a>
+    			</div>
+        	</div>
+				<ul id="menu-vertical">
+					<li><a href="index.html">Hache cueros</a></li>
+					<li><a href="catalogo_hache.html">Catálogo</a></li>
+					<li><a href="filosofia.html">Filosofía</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li><a href="catalogo_nah.html">Nah!</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul> 
+		</header>
+
+	{% block contenido %} {% endblock %}
+
+		<footer>
+			<p><small>© Copyright 2014   |   Hache cueros - Nah!   |   Todos los derechos reservados.</small></p>
+		</footer>
+	</body>
+</html>

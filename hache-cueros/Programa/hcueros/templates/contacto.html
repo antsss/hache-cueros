@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Contacto</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div id="header" class>
+    			<div class="header-logo-container">
+        			<a id="logo-container" title="Hache Cueros" class="spf-link">
+    					<img id="logo" src="img/hacheblanco5.png" alt="Hache Cueros">
+    				</a>
+    			</div>
+        	</div>
+				<ul id="menu-vertical">
+					<li><a href="index.html">Hache cueros</a></li>
+					<li><a href="catalogo_hache.html">Catálogo</a></li>
+					<li><a href="filosofia.html">Filosofía</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li><a href="catalogo_nah.html">Nah!</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul> 
+		</header>
+		<div class="contact-all">
+		<div class="indivudual-info">	
+		<form class="contact-form" action="form" method="get"> 
+			<ul class="information-only">
+				<li class="required_notification"><small>* Datos requeridos</small></li>
+				<li><label for="user-name"><small class="red-small-form">*</small>Nombre completo:</label>
+					<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
+				</li>
+				<li> 
+					<label><small class="red-small-form">*</small>Email:</label>
+						<input type="email" placeholder="alguien@ejemplo.com" required><span class="form_hint"><small>ingrese un email valido</small></span>
+				</li>
+				<li>
+					<label>País:</label>
+						<select id="country">
+							<option value="argentina" selected>Argentina</option>
+							<option value="brasil">Brasil</option>
+							<option value="bolivia">Bolivia</option>
+							<option value="chile">Chile</option>
+							<option value="Paraguay">Paraguay</option>
+							<option value="Uruguay">Uruguay</option>
+							<option value="otros">otros</option>
+						</select>
+				</li>
+				<li>
+					<label>Provincia</label>
+						<select id="provincia">
+							<option value="Buenos-Aires">Buenos Aires</option>
+							<option value="Catamarca">Catamarca</option>
+							<option value="Chaco">Chaco</option>
+							<option value="Chubut">Chubut</option>
+							<option value="Cordoba">Córdoba</option>
+							<option value="Corrientes">Corrientes</option>
+							<option value="Entre-Rioa">Entre Ríos</option>
+							<option value="Formosa">Formosa</option>
+							<option value="Jujuy">Jujuy</option>
+							<option value="La-Pampa">La Pampa</option>
+							<option value="La-Rioja">La Rioja</option>
+							<option value="Mendoza" selected>Mendoza</option>
+							<option value="Misiones">Misiones</option>
+							<option value="Neuquen">Neuquén</option>
+							<option value="Rio-Negro">Río-Negro</option>
+							<option value="Salta">Salta</option>
+							<option value="San-Juan">San Juan</option>
+							<option value="San-Luis">San Luis</option>
+							<option value="Santa-Cruz">Santa Cruz</option>
+							<option value="Santa-Fe">Santa Fe</option>
+							<option value="Santiago-del-Estero">Santiago del Estero</option>
+							<option value="Tierra-del-Fuego">Tierra del Fuego</option>
+							<option value="Tucuman">Tucumán</option>
+						</select>
+				</li>
+			</ul>
+			<ul class="single-message">
+				<li>
+					<label>Asunto:</label>
+					<input type="text">
+				</li>
+				<li>
+					<label><small class="red-small-form">*</small>Déjenos su mensaje:</label>
+				</li>
+				<li>
+					<textarea rows="15" cols="50" required></textarea>
+				</li>
+				<li>
+					<button class="submit" type="submit">Enviar mensaje</button>
+				</li>
+				</ul>
+		</form>	
+		</div>	
+		<div class="budge-contact">
+		<table class="container"> 
+			<caption>Presupuesto</caption>
+			<thead>
+				<tr>
+					<th id="article" colspan="2">Artículo</th>
+					<th id="amount">Cántidad</th>
+					<th id="description">Descripción</th>
+					<th id="price">Precio</th>
+					<th id="text" colspan="2">¿Alguna aclaración?</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="7"><input class="table-send" type="submit" value="Enviar"></td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Nah!</td>
+					<td>Cartera</td>
+					<td><input type="number" min="1" max="900"></td>
+					<td>Hecho en cuero azul con detalles en beige.</td>
+					<td>$850</td>
+					<td><textarea rows="1" cols="20"></textarea></td>
+					<td><button id="add-recibe" class="round-button-circle">+</button></td>
+				</tr>
+			</tbody>
+		</table>	
+		</div>
+		<nav id="contact-links">
+			<ul class="contact-num">
+				<li><a href="https://www.facebook.com/nahleathercrafts?fref=ts"><figure><img src="img/Facebook-logo.png" alt="enlace-hacia-el-sitio-en-facebook"/></figure></a></li>
+				<li>+54 0261 624-0824</li>
+				<li>Tucumán 34 - 5500 Ciudad de Mendoza, Mendoza, Argentina</li>
+				<li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.9254588095496!2d-68.8349758!3d-32.87369159999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08ddf3977119%3A0x4b8d85e66621d23e!2sTucum%C3%A1n+34%2C+Mendoza!5e0!3m2!1ses!2sar!4v1414009991293" width="200" height="150" frameborder="0" style="border:0"></iframe></li>
+			</ul>
+		</nav>
+	</div>
+		<footer>
+			<p><small>© Copyright 2014   |   Hache cueros - Nah!   |   Todos los derechos reservados.</small></p>
+		</footer>
+	</body>
+</html>

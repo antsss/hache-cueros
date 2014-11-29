@@ -24,6 +24,9 @@ DEBUG = False
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
+
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
@@ -38,9 +41,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'ckeditor',
     'imagekit',
-    'deployer',
+#    'deployer',
     'sociales',
     'articulos',
+    'contact_form',
 )
 
 MIDDLEWARE_CLASSES = (

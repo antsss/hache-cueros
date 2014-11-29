@@ -44,14 +44,14 @@ h1, h2, h3, h4 {
   color:#CD936E;
   background:#FFDFC9;
   display:block;
-  border-bottom:1px solid #CD936E;
+  border-bottom:1px solid #FFDFC9;
   border-radius: 6px;
   width:200px;
 }
 
 #menu-vertical a.active {
-  color:#333;
-  background:#f0f0f0;
+  color:#CD936E;
+  background:#FFDFC9;
 }
 /* === catalofos hache! === */
 .product-list-wrapper {

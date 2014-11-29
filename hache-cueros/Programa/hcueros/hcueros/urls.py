@@ -5,7 +5,9 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'hcueros.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-    url(r'^sociales/', include('sociales.urls')),
+    url(r'^sociales/', include('sociales.urls', namespace='sociales')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^ckeditor/', include('ckeditor.urls')),
+    url(r'^deployer/', include('deployer.urls')),
+   # url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 )

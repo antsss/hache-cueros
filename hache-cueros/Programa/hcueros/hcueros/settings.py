@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'ckeditor',
     'imagekit',
+    'deployer',
     'sociales',
     'articulos',
 )

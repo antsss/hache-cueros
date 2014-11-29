@@ -1,5 +1,7 @@
 from django.db import models
 from ckeditor.fields import RichTextField
+from imagekit.models import ImageSpecField
+from imagekit.processors import ResizeToFill, ResizeToFit, Adjust
 
 
 # Create your models here.
@@ -29,7 +31,11 @@ class Foto(models.Model):
 		verbose_name_plural = 'Fotos'
 
 	nombre = models.CharField(max_length=200)
-	imagen = models.ImageField(upload_to='FotosSociales',verbose_name='Fotos')
+	imagen = models.ImageField(upload_to='FotosSociales',verbose_name='Fotos', null=True)
+	imagen_thumbnail = ImageSpecField(source='imagen',
+                                      processors=[ResizeToFill(100, 50)],
+                                      format='JPEG',
+                                      options={'quality': 60})
 	visible = models.BooleanField(default=False)
 	social = models.ForeignKey(Social)
 

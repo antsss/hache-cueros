@@ -1,0 +1,8 @@
+<h1>Noticias</h1>
+{% for social in object_list %}
+    <article>
+        <h2>{{ social.titulo }}</h1>
+            {% if social.imagen %}<img src="{{ social.imagen.url }}">{% endif %}
+        <div>{{ social.texto|safe }}</div>
+    </article>
+{% endfor %}

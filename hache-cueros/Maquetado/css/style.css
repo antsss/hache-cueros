@@ -24,10 +24,10 @@ h1, h2, h3, h4 {
 
 #menu-vertical li {
   display:block;
-  border-bottom:1px solid #406480;
+  border-bottom:1px solid #CD936E;
   border-radius: 6px;
   width:200px;
-  background:#cfdce6;
+  background:#CD936E;
   margin-bottom: 20px;
 }
 
@@ -35,16 +35,16 @@ h1, h2, h3, h4 {
   display:block;
   padding:5px 5px 5px 10px;
   font-size:20px;
-  color:#507ea1;
+  color:#FFDFC9;
   text-decoration:none;
   line-height:40px;
 }
 
 #menu-vertical li a:hover {
-  color:#333;
-  background:#f0f0f0;
+  color:#CD936E;
+  background:#FFDFC9;
   display:block;
-  border-bottom:1px solid #406480;
+  border-bottom:1px solid #CD936E;
   border-radius: 6px;
   width:200px;
 }
@@ -53,7 +53,7 @@ h1, h2, h3, h4 {
   color:#333;
   background:#f0f0f0;
 }
-/* === catalofos nah! === */
+/* === catalofos hache! === */
 .product-list-wrapper {
 	height: 400px;
 	padding: 20px 0;
@@ -149,7 +149,7 @@ display: inline-block;
 vertical-align: middle;
 }
 #header #logo {
-background: no-repeat url(img/logo.hache-3.png) 0 -1184px;
+background: no-repeat url(img/hacheblanco5.png.png) 0 -1184px;
 background-size: auto;
 width: 200px ;
 height: 155px;
@@ -159,10 +159,10 @@ display: inline-block;
 vertical-align: middle;
 }
 #header #logo {
-background: no-repeat url(img/nah-2.png) 0 -1184px;
+background: no-repeat url(img/nah.png) 0 -1184px;
 background-size: auto;
-width: 200px ;
-height: 155px;
+width: 300px ;
+height: 255px;
 }
 /* === filosofia === */
 #principal-philosophy {

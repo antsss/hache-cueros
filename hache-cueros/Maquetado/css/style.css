@@ -301,9 +301,10 @@ height: 255px;
 /* === solo footer === */
 footer {
 border-top: 1px solid #454545;
-margin-left: 20px;
-color: #C1C1C1;
 float: left;
+margin-left: 20px;
+margin-top: 15px;
+color: #C1C1C1;
 height: 100px;
 padding-bottom: 36px;
 padding-top: 11px;
@@ -617,4 +618,63 @@ button.submit:hover {
 }
 .fotorama img{
   margin: 5px;
+}
+/* === detalle hache cuero ===*/
+.container-detail-hache-all {
+  z-index: 1;
+  display: block;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  color: #ffffcc;
+}
+
+.imagen-and-taxt-detail {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.imagen-detail {
+  width: 75%;
+  float: left;
+  padding-bottom: 10px;
+  display: block;
+}
+.imagen-detail-figure {
+
+}
+.Product-details {
+  width: 25%;
+  float: right;
+  position: relative;
+  z-index: 40;
+  display: block;
+}
+.detail-hache-cuero ul {
+padding-top: 10px;
+padding-right: 25px;
+padding-bottom: 10px;
+padding-left: 25px;
+color: #FFFFCC;
+}
+
+.detail-hache-cuero li {
+  list-style-type: none;
+text-transform: uppercase;
+padding: 8px 0;
+padding-top: 8px;
+padding-right: 0px;
+padding-bottom: 8px;
+padding-left: 0px
+
+}
+
+.lead-maintenance-detail span {
+  display: block;
+  border-collapse: separate;
+border-spacing: 2px;
+-webkit-border-horizontal-spacing: 2px;
+-webkit-border-vertical-spacing: 2px;
 }

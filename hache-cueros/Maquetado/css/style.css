@@ -38,6 +38,7 @@ h1, h2, h3, h4 {
     position:absolute;
     overflow:hidden;
 
+
     /* Text properties */
     font-size:20px;
     font-weight:bold;
@@ -67,20 +68,21 @@ h1, h2, h3, h4 {
 #menu-vertical a:hover span{ width:auto; padding:0 20px;overflow:visible; }
 #menu-vertical a:hover{
     text-decoration:none;
+    color: #000000;
 
     /* CSS outer glow with the box-shadow property */
-    -moz-box-shadow:0 0 5px #9ddff5;
-    -webkit-box-shadow:0 0 5px #9ddff5;
-    box-shadow:0 0 5px #9ddff5;
+    -moz-box-shadow:0 0 5px #000000;
+    -webkit-box-shadow:0 0 5px #000000;
+    box-shadow:0 0 5px #000000;
 }
 /* Green Button */
 
 #menu-vertical .manu-index { background-position:0 0;}
 #menu-vertical .manu-index:hover { background-position:0 -39px;}
 #menu-vertical .manu-index span{
-    background-color:#7da315;
-    color:#3d4f0c;
-    text-shadow:1px 1px 0 #99bf31;
+    background-color:#CD936E;
+    color:#ffffff;
+    text-shadow:1px 1px 0 #000000;
 }
 
 /* Blue Button */
@@ -88,9 +90,9 @@ h1, h2, h3, h4 {
 #menu-vertical .manu-catalogo { background-position:-38px 0;}
 #menu-vertical .manu-catalogo:hover { background-position:-38px -39px;}
 #menu-vertical .manu-catalogo span{
-    background-color:#1e8bb4;
-    color:#223a44;
-    text-shadow:1px 1px 0 #44a8d0;
+    background-color:#CD936E;
+    color:#ffffff;
+    text-shadow:1px 1px 0 #000000;
 }
 
 /* Orange Button */
@@ -98,9 +100,9 @@ h1, h2, h3, h4 {
 #menu-vertical .manu-filosofia { background-position:-76px 0;}
 #menu-vertical .manu-filosofia:hover { background-position:-76px -39px;}
 #menu-vertical .manu-filosofia span{
-    background-color:#c86c1f;
-    color:#5a3517;
-    text-shadow:1px 1px 0 #d28344;
+    background-color:#CD936E;
+    color:#ffffff;
+    text-shadow:1px 1px 0 #000000;
 }
 
 /* Yellow Button */
@@ -108,9 +110,9 @@ h1, h2, h3, h4 {
 #menu-vertical .manu-agenda { background-position:-114px 0;}
 #menu-vertical .manu-agenda:hover{ background-position:-114px -39px;}
 #menu-vertical .manu-agenda span{
-    background-color:#d0a525;
-    color:#604e18;
-    text-shadow:1px 1px 0 #d8b54b;
+    background-color:#CD936E;
+    color:#ffffff;
+    text-shadow:1px 1px 0 #000000;
 }
 
 /* Purple Button */
@@ -118,9 +120,9 @@ h1, h2, h3, h4 {
 #menu-vertical .manu-nah { background-position:-152px 0;}
 #menu-vertical .manu-nah:hover { background-position:-152px -39px;}
 #menu-vertical .manu-nah span{
-    background-color:#D41036;
-    color:#610606;
-    text-shadow:1px 1px 0 #92122B;
+    background-color:#CD936E;
+    color:#ffffff;
+    text-shadow:1px 1px 0 #000000;
 }
 
 /* red Button */
@@ -128,28 +130,28 @@ h1, h2, h3, h4 {
 #menu-vertical .manu-contacto { background-position:-152px 0;}
 #menu-vertical .manu-contacto:hover { background-position:-152px -39px;}
 #menu-vertical .manu-contacto span{
-    background-color:#af1e83;
-    color:#460f35;
-    text-shadow:1px 1px 0 #d244a6;
+    background-color:#CD936E;
+    color:#ffffff;
+    text-shadow:1px 1px 0 #000000;
 }
 
 #menu-vertical .manu-index {
-  background: #7da315;
+  background: #CD936E;
 }
 #menu-vertical .manu-catalogo {
-  background: #1e8bb4;
+  background: #CD936E;
 }
 #menu-vertical .manu-filosofia {
-  background: #c86c1f;
+  background: #CD936E;
 }
 #menu-vertical .manu-agenda {
-  background: #d0a525;
+  background: #CD936E;
 }
 #menu-vertical .manu-nah {
-  background: #D41036;
+  background: #CD936E;
 }
 #menu-vertical .manu-contacto {
-  background: #af1e83;
+  background: #CD936E;
 }
 #menu-vertical a{
   text-align: center;
@@ -159,7 +161,6 @@ h1, h2, h3, h4 {
 /* === catalofos hache! === */
 .product-list-wrapper {
 	height: 400px;
-  width: 400px
 	padding: 20px 0;
 	overflow: hidden;
 	overflow-x: scroll;

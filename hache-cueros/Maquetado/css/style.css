@@ -314,7 +314,6 @@ width: 100%;
 .female {
   display: block;
 float: left;
-height: 357px;
 margin-right: 107px;
 width: 302px;
 color: #FFFFFF;
@@ -323,17 +322,12 @@ text-align: center;
 .male {
 display: block;
 float: left;
-height: 357px;
 width: 303px;
 color: #FFFFff;
 text-align: center;
 }
 .intro-nah {
 margin: auto;
-margin-top: 200px;
-margin-right: auto;
-margin-bottom: 200px;
-margin-left: auto;
 width: 712px;
 }
 /* === contact ===*/
@@ -626,26 +620,28 @@ button.submit:hover {
   padding: 0;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 10px;
-  margin-left: 100px;
+  margin-bottom: 5px;
+  margin-left: 150px;
   color: #ffffcc;
 }
 
 .imagen-and-taxt-detail {
   display: block;
-  margin: 0;
+  margin:-left: 50px;
   padding: 0;
 }
 .imagen-detail {
+  margin-right: 3px;
+  border-top: 1px solid #DBDBDB;
+}
+.imagen-detail-figure {
   width: 75%;
   float: left;
   padding-bottom: 10px;
   display: block;
 }
-.imagen-detail-figure {
-
-}
-.Product-details {
+.Product-details {  
+  border-left: 1px #DBDBDB;
   width: 25%;
   float: right;
   position: relative;
@@ -653,11 +649,11 @@ button.submit:hover {
   display: block;
 }
 .detail-hache-cuero ul {
-padding-top: 10px;
-padding-right: 25px;
-padding-bottom: 10px;
-padding-left: 25px;
-color: #FFFFCC;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  color: #FFFFCC;
 }
 
 .detail-hache-cuero li {

@@ -61,6 +61,7 @@ h1, h2, h3, h4 {
     width:38px;
     display:block;
     position:relative;
+    text-decoration: none;
 }
 
 /* General hover styles */
@@ -154,18 +155,23 @@ h1, h2, h3, h4 {
 }
 #menu-vertical a{
   text-align: center;
-  color: #000000;
+  color: #ffffff;
+  text-shadow:1px 1px 0 #000000;
+
 }
 
 /* === catalofos hache! === */
 .product-list-wrapper {
 	height: 400px;
+  margin-left: 200px;
 	padding: 20px 0;
 	overflow: hidden;
 	overflow-x: scroll;
 }
 .product-list-horizontal {
 	list-style: none;
+  padding: 0;
+  margin: 0;
 	white-space: nowrap;
 }
 .product-list-horizontal li {
@@ -173,7 +179,7 @@ h1, h2, h3, h4 {
 	margin-left: 40px;
 }
 .product-list-horizontal li:first-child {
-	margin-left: 200px;
+	margin-left: 0;
 }
 .product-list-wrapper::-webkit-scrollbar {
 	width: 12px;
@@ -184,8 +190,7 @@ h1, h2, h3, h4 {
 .product-list-wrapper::-webkit-scrollbar-track {
 	background-color: #333;
 	border-left: 0;
-  margin-left: 240px;
-  margin-right: 0;
+
 }
 .product-list-wrapper::-webkit-scrollbar-thumb {
 	background-color: #fff;
@@ -204,20 +209,39 @@ margin-top: 10px;
 .product_femenino : :-before {
 }
 .borders{
-width: 50%;
+width: 48%;
 height: 400px;
 float: left;
 overflow: hidden;
 margin-bottom: 10px;
-margin-left: 0;
-margin-right: 0;
-margin-top: 5px;
+margin-left: 2%;
 position: relative;
 }
 .borders:nth-child(3n) {
 margin-right: 0;
 }
-
+.borders img {
+width: 50%;
+height: auto;
+}
+.borders .details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30,30,30,.5);
+  text-align: center;
+  padding-top: 50%;
+}
+.borders a:hover .details {
+  display: block;
+}
+.details {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 5em;
+}
 .container {
     position: relative;
     width: 70%;
@@ -253,20 +277,20 @@ display: inline-block;
 vertical-align: middle;
 }
 #header #logo {
-background: no-repeat url(img/hacheblanco5.png.png) 0 -1184px;
+background: no-repeat url(img/hacheblanco3.png) 0 -1184px;
 background-size: auto;
-width: 200px ;
-height: 155px;
+width: 587px;
+height: 500px;
 }
 #header .header-logo-container #logo-container {
 display: inline-block;
 vertical-align: middle;
 }
 #header #logo {
-background: no-repeat url(img/nah.png) 0 -1184px;
+background: no-repeat url(img/nah-cueros.png) 0 -1184px;
 background-size: auto;
-width: 300px ;
-height: 255px;
+width: 150px ;
+height: 127px;
 }
 /* === filosofia === */
 #principal-philosophy {
@@ -298,6 +322,11 @@ height: 255px;
   list-style: none;
   padding: 0;
 }
+.title-philosophy {
+  color: #ffffff;
+  text-shadow: 1px 1px 6px #cecece;
+}
+
 /* === solo footer === */
 footer {
 border-top: 1px solid #454545;
@@ -314,7 +343,6 @@ width: 100%;
 .female {
   display: block;
 float: left;
-height: 357px;
 margin-right: 107px;
 width: 302px;
 color: #FFFFFF;
@@ -323,17 +351,12 @@ text-align: center;
 .male {
 display: block;
 float: left;
-height: 357px;
 width: 303px;
 color: #FFFFff;
 text-align: center;
 }
 .intro-nah {
 margin: auto;
-margin-top: 200px;
-margin-right: auto;
-margin-bottom: 200px;
-margin-left: auto;
 width: 712px;
 }
 /* === contact ===*/
@@ -451,6 +474,7 @@ button.submit:hover {
   display: inline;
   float: right;
   margin-right: 500px
+
 }
 /* === Form Element === */
 .contact-form label{
@@ -464,10 +488,12 @@ button.submit:hover {
   height: 20px;
   width: 220px;
   padding: 5px 8px;
+  color: #000000;
 }
 .contact-form textarea{
   padding: 8px;
   width: 300px;
+  color: #000000;
 }
 .contact-form button{
   margin-left: 156px;
@@ -478,6 +504,7 @@ button.submit:hover {
   box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
   border-radius: 2px;
   padding-right: 30px;
+
 }
 .contact-form input:focus, .contact-form textarea:focus {
   background: #fff;
@@ -488,6 +515,8 @@ button.submit:hover {
 /* === HTML validation style ===*/
 .contact-form input:required, .contact-form textarea:required {
   background: #fff;
+
+
 }
   .contac-form input:required:valid, .contact-form textarea:required:valid {
     background: #fff;
@@ -626,26 +655,29 @@ button.submit:hover {
   padding: 0;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 10px;
-  margin-left: 100px;
+  margin-bottom: 5px;
+  margin-left: 150px;
   color: #ffffcc;
 }
 
 .imagen-and-taxt-detail {
   display: block;
-  margin: 0;
-  padding: 0;
+  margin:: 0;
+  padding-left: 50px;
 }
 .imagen-detail {
-  width: 75%;
+  margin-right: 3px;
+  border-top: 1px solid #DBDBDB;
+}
+.imagen-detail-figure {
+  width: 70%;
   float: left;
   padding-bottom: 10px;
   display: block;
-}
-.imagen-detail-figure {
 
 }
-.Product-details {
+.Product-details {  
+  border-left: 1px #DBDBDB;
   width: 25%;
   float: right;
   position: relative;
@@ -653,22 +685,20 @@ button.submit:hover {
   display: block;
 }
 .detail-hache-cuero ul {
-padding-top: 10px;
-padding-right: 25px;
-padding-bottom: 10px;
-padding-left: 25px;
-color: #FFFFCC;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  color: #FFFFCC;
 }
 
 .detail-hache-cuero li {
   list-style-type: none;
   text-transform: italic;
-padding: 8px 0;
 padding-top: 2px;
 padding-right: 0px;
 padding-bottom: 8px;
-padding-left: 0px
-
+padding-left: 10px
 }
 
 .lead-maintenance-detail span {

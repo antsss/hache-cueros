@@ -155,7 +155,9 @@ h1, h2, h3, h4 {
 }
 #menu-vertical a{
   text-align: center;
-  color: #000000;
+  color: #ffffff;
+  text-shadow:1px 1px 0 #000000;
+
 }
 
 /* === catalofos hache! === */

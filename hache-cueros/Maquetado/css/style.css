@@ -472,6 +472,7 @@ button.submit:hover {
   display: inline;
   float: right;
   margin-right: 500px
+
 }
 /* === Form Element === */
 .contact-form label{
@@ -485,10 +486,12 @@ button.submit:hover {
   height: 20px;
   width: 220px;
   padding: 5px 8px;
+  color: #000000;
 }
 .contact-form textarea{
   padding: 8px;
   width: 300px;
+  color: #000000;
 }
 .contact-form button{
   margin-left: 156px;

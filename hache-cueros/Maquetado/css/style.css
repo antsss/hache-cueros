@@ -504,6 +504,7 @@ button.submit:hover {
   box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
   border-radius: 2px;
   padding-right: 30px;
+
 }
 .contact-form input:focus, .contact-form textarea:focus {
   background: #fff;
@@ -514,6 +515,8 @@ button.submit:hover {
 /* === HTML validation style ===*/
 .contact-form input:required, .contact-form textarea:required {
   background: #fff;
+
+
 }
   .contac-form input:required:valid, .contact-form textarea:required:valid {
     background: #fff;
@@ -671,6 +674,7 @@ button.submit:hover {
   float: left;
   padding-bottom: 10px;
   display: block;
+
 }
 .Product-details {  
   border-left: 1px #DBDBDB;

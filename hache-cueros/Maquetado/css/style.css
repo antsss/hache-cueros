@@ -319,6 +319,11 @@ height: 255px;
   list-style: none;
   padding: 0;
 }
+.title-philosophy {
+  color: #fff;
+  text-shadow: 1px 1px 6px #fff;
+}
+
 /* === solo footer === */
 footer {
 border-top: 1px solid #454545;

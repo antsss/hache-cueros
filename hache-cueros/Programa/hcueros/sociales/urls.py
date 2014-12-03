@@ -4,6 +4,5 @@ from sociales.models import Social
 from sociales import views
 
 urlpatterns = patterns('',
-    url(r'^$', views.index, name='index'),
-    url(r'^sociales/$', ListView.as_view(model=Social), name='sociales'),
+
 )

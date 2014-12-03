@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block titulo %} 
+	Noticias 
+{% endblock %}
+
+{% block contenido %} 
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<link  href="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.js"></script>
+			<div class="fotorama"  data-nav="thumbs" data-width="600"
+     data-height="250">
+     <div class="detalle-noticia">
+			<img src="http://placehold.it/600x250" alt="noticia-numero-1"/>
+			<article class="news-article">Promocion de portatermos en feria </article>
+		</div>
+			<img src="http://placehold.it/600x250" alt="noticia-numero-2"/>
+			<img src="http://placehold.it/600x250" alt="noticia-numero-3"/>
+			</div>
+{% endblock %}

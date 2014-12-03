@@ -606,7 +606,7 @@ button.submit:hover {
     }
 }
 /* === nwes, fotorama ===*/
-.fotorama {
+.detalle-noticia {
   position: relative;
   max-width:80%;
   margin:0px auto;

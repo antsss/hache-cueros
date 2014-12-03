@@ -323,8 +323,8 @@ height: 255px;
   padding: 0;
 }
 .title-philosophy {
-  color: #fff;
-  text-shadow: 1px 1px 6px #fff;
+  color: #ffffff;
+  text-shadow: 1px 1px 6px #cecece;
 }
 
 /* === solo footer === */
@@ -634,7 +634,7 @@ button.submit:hover {
 /* === nwes, fotorama ===*/
 .fotorama {
   position: relative;
-  max-width:80%;
+  max-width:100%;
   margin:0px auto;
   margin-top: 50px;
   margin-right: 10px;

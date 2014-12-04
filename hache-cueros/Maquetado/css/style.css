@@ -700,6 +700,9 @@ padding-right: 0px;
 padding-bottom: 8px;
 padding-left: 10px
 }
+input {
+  color: #330000;
+}
 
 .lead-maintenance-detail span {
   display: block;

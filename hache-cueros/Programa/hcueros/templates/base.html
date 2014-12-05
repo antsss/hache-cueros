@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 	<head>
 		<meta charset="UTF-8"/>
 		<title>{% block titulo %} {% endblock %}</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	</head>
-	<body>
-		<header>
+		<body>
+			<img id="bg" src="img/cuero-base.jpg"  alt="background" />
+			<header>
 			<div id="header" class>
     			<div class="header-logo-container">
         			<a id="logo-container" title="Hache Cueros" class="spf-link">
@@ -15,19 +17,22 @@
     			</div>
         	</div>
 				<ul id="menu-vertical">
-					<li><a href="index.html">Hache cueros</a></li>
-					<li><a href="catalogo_hache.html">Catálogo</a></li>
-					<li><a href="filosofia.html">Filosofía</a></li>
-					<li><a href="noticias.html">Noticias</a></li>
-					<li><a href="catalogo_nah.html">Nah!</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul> 
-		</header>
+					<li><a class="manu-index" href="index.html">HC<span>Hache cueros</span></a></li>
+					<li><a class="manu-catalogo" href="catalogo_hache.html">C<span>Catálogo</span></a></li>
+					<li><a class="manu-filosofia" href="filosofia.html">F<span>Filosofía</span></a></li>
+					<li><a class="manu-agenda" href="noticias.html">A<span>Agenda</span></a></li>
+					<li><a class="manu-nah" href="catalogo_nah.html">N<span>Nah!</span></a></li>
+					<li><a class="manu-contacto" href="contacto.html">C<span>Contacto</span></a></li>
+				</ul> 	
+			
+			</header>
 
-	{% block contenido %} {% endblock %}
+			{% block contenido %} {% endblock %}
 
-		<footer>
-			<p><small>© Copyright 2014   |   Hache cueros - Nah!   |   Todos los derechos reservados.</small></p>
-		</footer>
+			<div>
+			<footer>
+			<p><small>© Copyright 2014   |   Hache cueros - Nah!   |   Todos los derechos reservados.</small></p>	
+			</footer>
+		</div>
 	</body>
 </html>

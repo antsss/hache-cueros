@@ -23,7 +23,13 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
-#menu-vertical li {
+#menu-vertical li {html {
+    background: url(img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
   list-style: none;
   height: 39px;
   padding: 2px;
@@ -160,7 +166,7 @@ h1, h2, h3, h4 {
 
 }
 
-/* === catalofos hache! === */
+/* === catagofos hache! === */
 .product-list-wrapper {
 	height: 400px;
   margin-left: 200px;
@@ -277,10 +283,10 @@ display: inline-block;
 vertical-align: middle;
 }
 #header #logo {
-background: no-repeat url(img/hacheblanco3.png) 0 -1184px;
+background: no-repeat url(img/hacheblanco5.png.png) 0 -1184px;
 background-size: auto;
-width: 587px;
-height: 500px;
+width: 300px ;
+height: 255px;
 }
 #header .header-logo-container #logo-container {
 display: inline-block;
@@ -332,13 +338,14 @@ footer {
 border-top: 1px solid #454545;
 float: left;
 margin-left: 20px;
-margin-top: 15px;
+margin-top: 470px;
 color: #C1C1C1;
 height: 100px;
 padding-bottom: 36px;
 padding-top: 11px;
 width: 100%;
 }
+
 /* === nah! === */
 .female {
   display: block;
@@ -504,7 +511,6 @@ button.submit:hover {
   box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
   border-radius: 2px;
   padding-right: 30px;
-
 }
 .contact-form input:focus, .contact-form textarea:focus {
   background: #fff;
@@ -515,8 +521,6 @@ button.submit:hover {
 /* === HTML validation style ===*/
 .contact-form input:required, .contact-form textarea:required {
   background: #fff;
-
-
 }
   .contac-form input:required:valid, .contact-form textarea:required:valid {
     background: #fff;
@@ -635,7 +639,7 @@ button.submit:hover {
     }
 }
 /* === nwes, fotorama ===*/
-.detalle-noticia {
+.fotorama {
   position: relative;
   max-width:80%;
   margin:0px auto;
@@ -674,7 +678,6 @@ button.submit:hover {
   float: left;
   padding-bottom: 10px;
   display: block;
-
 }
 .Product-details {  
   border-left: 1px #DBDBDB;
@@ -700,9 +703,6 @@ padding-right: 0px;
 padding-bottom: 8px;
 padding-left: 10px
 }
-input {
-  color: #330000;
-}
 
 .lead-maintenance-detail span {
   display: block;
@@ -710,4 +710,51 @@ input {
 border-spacing: 2px;
 -webkit-border-horizontal-spacing: 2px;
 -webkit-border-vertical-spacing: 2px;
+}
+#bg{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+window.onload = function() {
+ 
+    function bgadj(){
+             
+        var element = document.getElementById("bg");
+         
+        var ratio =  element.width / element.height;   
+         
+        if ((window.innerWidth / window.innerHeight) < ratio){
+         
+            element.style.width = 'auto';
+            element.style.height = '100%';
+             
+            <!-- si la imagen es mas ancha que la ventana la centro -->
+            if (element.width > window.innerWidth){
+             
+                var ajuste = (window.innerWidth - element.width)/2;
+                 
+                element.style.left = ajuste+'px';
+             
+            }
+         
+        }
+        else{  
+         
+            element.style.width = '100%';
+            element.style.height = 'auto';
+            element.style.left = '0';
+ 
+        }
+         
+    }
+<!-- llamo a la función bgadj() por primera vez al terminar de cargar la página -->
+    bgadj();
+    <!-- vuelvo a llamar a la función  bgadj() al redimensionar la ventana -->
+    window.onresize = function() {
+        bgadj();
+ 
+    }
+ 
 }

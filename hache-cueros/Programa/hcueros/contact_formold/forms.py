@@ -61,7 +61,7 @@ class ContactForm(forms.Form):
       ``From:`` header of the message. The base implementation returns
       the value of the ``DEFAULT_FROM_EMAIL`` setting.
 
-    * ``message`` -- used to get the message body as a string. The
+    * ``body`` -- used to get the message body as a string. The
       base implementation renders a template using the form's
       ``cleaned_data`` dictionary as context.
 
@@ -79,11 +79,11 @@ class ContactForm(forms.Form):
       message. Default is ``contact_form/contact_form.txt``.
 
     Internally, the base implementation ``_get_message_dict`` method
-    collects ``from_email``, ``message``, ``to`` and
+    collects ``from_email``, ``body``, ``to`` and
     ``subject`` into a dictionary, which the ``save`` method then
     passes directly to ``send_mail`` as keyword arguments.
 
-    Particularly important is the ``message`` attribute, with its base
+    Particularly important is the ``body`` attribute, with its base
     implementation as a method which renders a template; because it
     passes ``cleaned_data`` as the template context, any additional
     fields added by a subclass will automatically be available in the
